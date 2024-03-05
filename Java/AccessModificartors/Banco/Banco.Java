@@ -1,4 +1,4 @@
-Clase banco: public class Bank{
+public class Bank{
   private CheckingAccount accountOne;
   private CheckingAccount accountTwo;
 
@@ -10,8 +10,18 @@ Clase banco: public class Bank{
   public static void main(String[] args){
     Bank bankOfGods = new Bank();
     System.out.println(bankOfGods.accountOne.getBalance());
-    bankOfGods.accountOne.setBalance(5000);
-    System.out.println(bankOfGods.accountOne.getBalance());
+    bankOfGods.accountOne.consignar(5000);
+    System.out.println("Su saldo es: " + bankOfGods.accountOne.getBalance());
+    bankOfGods.accountOne.consignar(5000);
+    System.out.println("Su saldo es: " + bankOfGods.accountOne.getBalance());
+    bankOfGods.accountOne.consignar(5000);
+    System.out.println("Su saldo es: " + bankOfGods.accountOne.getBalance());
+    bankOfGods.accountOne.retirar(5000);
+    System.out.println("Su saldo es: " + bankOfGods.accountOne.getBalance());
+    bankOfGods.accountOne.retirar(5000);
+    System.out.println("Su saldo es: " + bankOfGods.accountOne.getBalance());
+    bankOfGods.accountOne.retirar(5000);
+    System.out.println("Su saldo es: " + bankOfGods.accountOne.getBalance());
     System.out.println(bankOfGods.accountOne.getMonthlyInterest());
 
   }
