@@ -1,5 +1,3 @@
-package bank;
-
 public class CheckingAccount{
   private String name;
   private int balance;
@@ -17,7 +15,14 @@ public class CheckingAccount{
     return this.balance;
   }
   
-  public void setBalance(int newBalance){
+  public void consignar (int c){
+    this.balance = this.balance + c;
+  } 
+  public void retirar (int r){
+    this.balance = this.balance - r;
+  } 
+  
+  public void setBalance(int newBalance, int consignar){
     this.balance = newBalance;
   }
 
